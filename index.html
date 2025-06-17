@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event guest list manager</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Guest list</h1>
+    <form  id="guestlist">
+        <input type="text" placeholder="Enter guest name" id="guestName"required/>
+        <div class="category-options">
+  <label class="category-option">
+    <input type="radio" name="category" value="Friend" checked>
+    <span class="pill friend">Friend</span>
+  </label>
+  <label class="category-option">
+    <input type="radio" name="category" value="Family">
+    <span class="pill family">Family</span>
+  </label>
+  <label class="category-option">
+    <input type="radio" name="category" value="Colleague">
+    <span class="pill colleague">Colleague</span>
+  </label>
+</div>
+
+        <input type="submit" value="Add a guest" />
+     
+    </form>
+     <ul id="list" >
+       
+     
+     </ul>
+  
+    <script src="./src/index.js"></script>
+</body>
+</html>
